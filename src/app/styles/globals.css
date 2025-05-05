@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@import "@kibamail/owly/styles/tokens.css";
+
+@import "@kibamail/owly/styles/text.css";
+@import "@kibamail/owly/styles/alert.css";
+@import "@kibamail/owly/styles/button.css";
+@import "@kibamail/owly/styles/badge.css";
+@import "@kibamail/owly/styles/heading.css";
+@import "@kibamail/owly/styles/spinner.css";
+@import "@kibamail/owly/styles/dialog.css";
+@import "@kibamail/owly/styles/checkbox.css";
+@import "@kibamail/owly/styles/progress.css";
+@import "@kibamail/owly/styles/text-field.css";
+@import "@kibamail/owly/styles/select-field.css";
+
+@import "@kibamail/owly/styles/semantic-classes.css";
+
+@import './animations.css';
+
+@font-face {
+  font-family: "RocaTwo";
+  src: url("/fonts/roca-two-rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+body {
+  @apply font-sans;
+  --w-sidebar-width: 260px;
+}

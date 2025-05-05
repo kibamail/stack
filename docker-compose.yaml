@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_stack
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "d0b8a11e0ed547308c582e3677c9d6ce"
+      POSTGRES_PASSWORD: "71570b23138e4db58d70e46d93bb46eb"
+      POSTGRES_DB: "stack"
+    ports:
+      - "6543:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

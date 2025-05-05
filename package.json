@@ -6,19 +6,29 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "biome format ./src/**/*.{ts,tsx} --write"
   },
   "dependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@kibamail/owly": "^1.0.37",
+    "@prisma/client": "^6.7.0",
+    "@radix-ui/react-dropdown-menu": "^2.1.12",
+    "better-auth": "^1.2.7",
+    "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@babel/core": "^7.27.1",
+    "@better-auth/cli": "^1.2.7",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "prisma": "^6.7.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
